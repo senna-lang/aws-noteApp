@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   const { contents } = await getNotesList();
   return contents.map(note => ({
     id: note.id,
-}));
+  }));
 }
 
 const Page = async ({ params }: { params: { id: string } }) => {

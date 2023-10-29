@@ -15,11 +15,14 @@ export const getNotesList = async () => {
   return noteLists;
 };
 //ノート詳細を取得
-export const getDetailNote = async ( contentId:string, queries?:MicroCMSQueries) => {
+export const getDetailNote = async (
+  contentId: string,
+  queries?: MicroCMSQueries
+) => {
   const detailNote = await client.getListDetail<Note>({
     endpoint: 'notes-test',
     contentId,
-    queries
+    queries,
   });
 
   return detailNote;
