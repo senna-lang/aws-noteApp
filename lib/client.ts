@@ -24,9 +24,6 @@ export const getDetailNote = async (
 ) => {
   const detailNote = await client.getListDetail<Note>({
     endpoint: 'notes-test',
-    customRequestInit: {
-      cache: 'no-store'
-    },
     contentId,
     queries,
   });
