@@ -9,7 +9,7 @@ export const client = createClient({
 //ノート一覧を取得
 export const getNotesList = async () => {
   const noteLists = await client.getList<Note>({
-    endpoint: 'notes-test',
+    endpoint: 'notes-test2',
     customRequestInit: {
       cache: 'no-store'
     }
@@ -23,10 +23,7 @@ export const getDetailNote = async (
   queries?: MicroCMSQueries
 ) => {
   const detailNote = await client.getListDetail<Note>({
-    endpoint: 'notes-test',
-    customRequestInit: {
-      cache: 'no-store'
-    },
+    endpoint: 'notes-test2',
     contentId,
     queries,
   });
