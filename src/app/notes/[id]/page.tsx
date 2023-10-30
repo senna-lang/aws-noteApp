@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import Note from './Note';
 import { getDetailNote, getNotesList } from '../../../../lib/client';
