@@ -2,8 +2,8 @@ import { MicroCMSQueries, createClient } from 'microcms-js-sdk';
 import { Note } from '@/app/notes/type';
 
 export const client = createClient({
-  serviceDomain: process.env.NEXT_PUBLIC_SERVICE_DOMAIN || '',
-  apiKey: process.env.NEXT_PUBLIC_API_KEY || '',
+  serviceDomain: 'ku4eu5oybh',
+  apiKey: 'UbzvSvWqjuct7smSP6H2PC1qhuD0Tn2cDMlh'
 });
 
 //ノート一覧を取得
