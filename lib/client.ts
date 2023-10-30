@@ -10,9 +10,6 @@ export const client = createClient({
 export const getNotesList = async () => {
   const noteLists = await client.getList<Note>({
     endpoint: 'notes-test',
-    customRequestInit: {
-      cache: 'no-store'
-    }
   });
 
   return noteLists;
